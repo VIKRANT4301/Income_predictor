@@ -1,0 +1,182 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    background-image: url('../images/model.png'); /* Add image */
+    background-size: cover; /* Scale image to cover entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+ 
+  }
+  
+  /* Main App container */
+  .App {
+    text-align: center;
+   
+  }
+  /* Navbar Styling - Full Width with Left-aligned links */
+.navbar {
+  background: linear-gradient(to right, #000000, #1a1a66, #0011ff); /* Matching gradient for navbar */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-end; /* Align items to the left */
+  align-items: center;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures navbar stays on top of other content */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar List */
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  animation: slideIn 1s ease-out forwards;
+}
+
+/* Navbar Heading */
+.navbar h2 {
+  justify-content: flex-start;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navbar Links */
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Navbar Link Hover */
+.navbar-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Logout Button */
+.logout-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  background: linear-gradient(135deg, #f44336, #d32f2f);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: linear-gradient(135deg, #d32f2f, #b71c1c);
+  transform: scale(1.05);
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+  /* Navbar styles */
+  .navbar {
+    background-color: #001f72;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Navbar list */
+  .navbar-list {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  /* Main content styles */
+  .content {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  /* Main heading */
+  h1 {
+    font-size: 32px;
+    color: #333;
+  }
+  
+  /* Description */
+  p {
+    font-size: 18px;
+    color: #595858;
+    margin-top: 10px;
+  }
+  /* Blur Box Content Styling */
+.content {
+    max-width: 700px;
+    width: 100%;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    backdrop-filter: blur(3px); /* Blur effect */
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin: 50px auto;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Welcome Text Styling */
+  .content h1 {
+    font-size: 2.5rem;
+    color: #070202;
+    margin-bottom: 15px;
+    animation: fadeInUp 1s ease-out; 
+  }
+  
+  /* Description Text */
+  .content p {
+    font-size: 1.2rem;
+    color: #0c0909;
+    margin-bottom: 30px;
+    animation: slideIn 1.2s ease-out;
+  }
+  
+  /* Get Started button */
+  .get-started-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #596604;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .get-started-btn:hover {
+    background-color:Black;
+  }
+  
+  .btn-link {
+    text-decoration: none;
+    color: white;
+  }
+  

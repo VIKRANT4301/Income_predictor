@@ -1,0 +1,135 @@
+/* Root variables */
+:root {
+  --font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height: 1.5;
+  --font-weight: 400;
+  --text-color-light: #213547;
+  --text-color-dark: rgba(255, 255, 255, 0.87);
+  --bg-color-dark: #242424;
+  --bg-color-light: #ffffff;
+  --link-color: #646cff;
+  --link-hover-color: #535bf2;
+  --button-bg-dark: #1a1a1a;
+  --button-bg-light: #f9f9f9;
+  --button-hover-border-color: #646cff;
+  --button-focus-outline: 4px auto -webkit-focus-ring-color;
+  --transition-duration: 0.25s;
+  --border-radius: 8px;
+}
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 320px;
+  transition: background-color var(--transition-duration), color var(--transition-duration);
+}
+
+a {
+  font-weight: 500;
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color var(--transition-duration);
+}
+a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Header */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-weight: 700;
+  color: var(--text-color-dark);
+  text-align: center;
+  margin-bottom: 24px;
+  transition: color var(--transition-duration);
+}
+
+/* Button styles */
+button {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  background-color: var(--button-bg-dark);
+  color: white;
+  cursor: pointer;
+  transition: all var(--transition-duration);
+}
+
+button:hover {
+  border-color: var(--button-hover-border-color);
+  background-color: var(--button-bg-light);
+  transform: translateY(-2px);
+}
+
+button:focus,
+button:focus-visible {
+  outline: var(--button-focus-outline);
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+  }
+
+  h1 {
+    color: white;
+  }
+
+  a:hover {
+    color: var(--link-hover-color);
+  }
+
+  button {
+    background-color: var(--button-bg-dark);
+    color: white;
+  }
+
+  button:hover {
+    background-color: var(--button-bg-light);
+  }
+}
+
+/* Light mode styles */
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+  }
+
+  h1 {
+    color: var(--text-color-light);
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: var(--button-bg-light);
+    color: #333;
+  }
+
+  button:hover {
+    background-color: var(--button-bg-dark);
+  }
+}

@@ -1,0 +1,160 @@
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #000000, #0a0f3c, #122d92); /* Black to Blue Gradient */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Signup Container */
+.signin {
+  width: 400px;
+  padding: 25px 35px;
+  background: #fff; /* Pure White Background */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Light border for contrast */
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Container Hover Effect */
+.signin:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Elevates on hover */
+}
+
+/* Sign Up Heading */
+.signin h2 {
+  color: #070404;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Form Styling */
+.signin form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input Fields */
+.signin input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc; /* Light border around input */
+  border-radius: 8px;
+  background: #f9f9f9;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Input Focus Effect */
+.signin input:focus {
+  border-color: #4a90e2; /* Blue border on focus */
+  box-shadow: 0 4px 8px rgba(74, 144, 226, 0.3);
+  background: #fff;
+}
+
+/* Button Styles */
+.button[type="submit"]{
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #000, #333); /* Gradient Black */
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+  display: block;
+  margin: 10px auto;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.button[type="submit"]:hover {
+  background: linear-gradient(135deg, #333, #555); /* Darker Gradient */
+  transform: translateY(-3px); /* Slight lift */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button[type="submit"]:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Back Button */
+.back-button {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Back Button Hover Effect - No White */
+.back-button:hover {
+  background: linear-gradient(135deg, #c82333, #a71d2a); /* Darker Red Gradient */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(204, 0, 0, 0.2);
+}
+
+
+/* Already Have an Account - Login Link */
+.signin p {
+  margin-top: 15px;
+  color: #0a58ca;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+/* Login Link Hover */
+.signin p a {
+  color: #0a58ca;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Link Hover Effect */
+.signin p a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+  transition: color 0.3s ease;
+}
+
+/* Button Group Styling */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Responsiveness for Small Screens */
+@media (max-width: 600px) {
+  .signin {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button,
+  .back-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,1 @@
+features = [Age, Education_Level, Number_of_Dependents , Occupation ,Location ,  Work_Experience,  Marital_Status,  Employment_Status,Household_Size,Homeownership_Status,Type_of_Housing, Gender,Primary_Mode_of_Transportation]

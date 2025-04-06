@@ -1,0 +1,100 @@
+/* Container Styling */
+.result-container {
+    max-width: 700px;
+    width: 100%;
+    padding: 80px;
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center;
+    margin: 50px auto;
+    backdrop-filter: blur(12px); /* Enhanced Blur */
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  /* Prediction Box */
+  .pre {
+    background-color: rgba(255, 255, 255, 0.8); /* Blurred blue shade */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    backdrop-filter: blur(12px); /* Blur added here as well */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Predicted Text */
+  .predicted {
+    font-size: 20px;
+    color: #227f38;
+    margin-bottom: 15px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Error Box */
+  .err {
+    background-color: rgba(255, 204, 204, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Error Text */
+  .error {
+    font-size: 18px;
+    color: #ff4d4d;
+  }
+  
+  /* Back Button */
+  .back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Fade In Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .result-container {
+      width: 90%;
+      padding: 40px;
+    }
+  
+    .pre, .err {
+      width: 100%;
+      max-width: 100%;
+      padding: 15px;
+    }
+  
+    .back-btn {
+      width: 100%;
+      padding: 12px 0;
+    }
+  }
+  

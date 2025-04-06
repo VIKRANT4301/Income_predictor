@@ -1,0 +1,181 @@
+/* signup.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #000000, #0a0f3c, #122d92); /* Black to Blue Gradient */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Signup Container */
+.signup {
+  width: 400px;
+  padding: 50px auto;
+  background: #fff; /* Pure White Background */
+  border-radius: 12px;
+  padding: 25px 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Light border for contrast */
+  text-align: center;
+}
+
+/* Sign Up Heading */
+.signup h2 {
+  color: #100808;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Form Styling */
+.signup form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input Fields */
+.signup input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc; /* Light border around input */
+  border-radius: 8px;
+  background: #f9f9f9;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Password Container */
+.password-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Input Wrapper */
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Input Field */
+.input-wrapper input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Eye Icon Button */
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+  width:20px;
+  padding: 0px;
+}
+
+/* Eye Icon Hover Effect */
+.eye-icon:hover {
+  color: #4a90e2;
+}
+
+/* Submit Button */
+.submit {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.submit:hover {
+  background-color: #45a049;
+}
+
+/* Back Button */
+.back-button {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #ff1a1a;
+}
+/* Sign Up Button */
+.submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #000;
+  /*BlackButton*/border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -ms-transition: background 0.3s;
+  -o-transition: background 0.3s;
+}
+
+.submit:hover {
+  background-color: #333;
+}
+
+/* Back Button */
+.back-button {
+  margin-top: 10px;
+  background-color: #dc3545;
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.back-button:hover {
+  background-color: #c82333; /* Darker Red on Hover */
+}
+
+/* Already Have an Account - Login Link */
+.signup p {
+  margin-top: 10px;
+  color: #007bff;
+  font-size: 14px;
+}
+
+.signup p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup p a:hover {
+  text-decoration: underline;
+}
